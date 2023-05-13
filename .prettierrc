@@ -1,14 +1,8 @@
 {
-    "overrides": [
-        {
-            "files": "*.vue",
-            "options": {
-                "tabWidth": 4,
-                "printWidth": 120,
-                "singleQuote": true,
-                "trailingComma": "es5",
-                "arrowParens": "always"
-            }
-        }
-    ]
-}
+    "tabWidth": 4,
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "always"
+  }
+  
