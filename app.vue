@@ -1,7 +1,7 @@
 <template>
-  <div class="theme">
-    <NuxtPage></NuxtPage>
-  </div>
+  <NuxtLayout>
+      <NuxtPage></NuxtPage>
+  </NuxtLayout>
 </template>
 
 <style lang="scss">

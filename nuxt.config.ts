@@ -11,6 +11,16 @@ export default defineNuxtConfig({
     },
   },
 
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/global.scss" as *;'
+        }
+      }
+    }
+  },
+
   runtimeConfig: {
     // The private keys which are only available within server-side
     secret: "XXX",
