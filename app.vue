@@ -6,13 +6,12 @@
 
 <script setup lang="ts">
     definePageMeta({
-        title: "Charlie Villalobos",
+        title: "",
     });
 
     useSeoMeta({
-        title: "Charlie Villalobos",
-        description:
-            "Exceptional web development solutions tailored to your needs. Freelance web developer Carlos Villalobos crafts high-quality websites and applications using cutting-edge technologies. Explore success stories, consult for recommendations, integrate APIs seamlessly, and expand your skills. Contact Carlos Villalobos for digital excellence!",
+        title: "",
+        description: "",
     });
 
     const configStore = useConfigStore();
