@@ -1,6 +1,5 @@
 <template>
-    <div class="sm:w-5/6 w-full px-4 m-auto">
-      <slot />
+    <div class="w-full m-auto">
+        <slot />
     </div>
-  </template>
-  
+</template>

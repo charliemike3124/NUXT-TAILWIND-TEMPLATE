@@ -5,3 +5,7 @@
 node_modules
 # System files
 *.log
+.DS_Store
+firebase.config.js
+
+.env

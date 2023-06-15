@@ -1,0 +1,27 @@
+// Global variables.
+
+// Global classes.
+div {
+    &.offset-scroll {
+        position: absolute;
+        top: -250px;
+        visibility: hidden;
+    }
+}
+
+[data-aos] {
+    pointer-events: none;
+}
+.aos-animate {
+    pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+    transform: unset;
+}
+
+// Fonts
+@font-face {
+    font-family: "Poppins";
+    src: url("Poppins-Regular.ttf") format("truetype");
+    font-display: swap;
+}

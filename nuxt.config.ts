@@ -1,32 +1,31 @@
 import tailwindConfig from "./tailwind.config";
 
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
+    modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge", "@pinia/nuxt"],
 
-  app: {
-    pageTransition: { name: "page", mode: "out-in" },
-    head: {
-      // @ts-ignore
-      style: [{ children: tailwindConfig.cssRootVars, type: "text/css" }],
+    app: {
+        head: {
+            script: [],
+            style: [{ children: tailwindConfig.cssRootVars, type: "text/css" }],
+        },
     },
-  },
 
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "@/assets/global.scss" as *;'
-        }
-      }
-    }
-  },
-
-  runtimeConfig: {
-    // The private keys which are only available within server-side
-    secret: "XXX",
-    // Keys within public, will be also exposed to the client-side
-    public: {
-      apiBase: "/api",
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@use "@/assets/global.scss" as *;',
+                },
+            },
+        },
     },
-  },
+
+    runtimeConfig: {
+        public: {},
+    },
+
+    image: {
+        dir: "public",
+        provider: "netlify",
+    },
 });
