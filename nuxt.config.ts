@@ -20,8 +20,6 @@ export default defineNuxtConfig({
         },
     },
 
-    buildDir: "dist",
-
     runtimeConfig: {
         BASE_URL: "",
         FIREBASE_API_KEY: "",
