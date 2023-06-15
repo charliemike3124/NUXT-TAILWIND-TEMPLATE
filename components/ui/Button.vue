@@ -20,12 +20,12 @@
 
         name +=
             props.primary && props.outlined
-                ? "bg-transparent border-primary border-2 text-primary "
+                ? "bg-transparent border-primary-400 border-2 text-primary-400 "
                 : props.primary && !props.outlined
-                ? "bg-primary hover:bg-white text-white hover:text-primary-text "
+                ? "bg-primary-400 hover:bg-white text-white hover:text-primary-text "
                 : !props.primary && props.outlined
-                ? "text-white bg-transparent border-background-1 border-2 hover:bg-primary hover:border-primary "
-                : "bg-background-1 hover:bg-primary hover:text-white ";
+                ? "text-white bg-transparent border-secondary-50 border-2 hover:bg-primary-400 hover:border-primary-400 "
+                : "bg-secondary-50 hover:bg-primary-400 hover:text-primary-text ";
 
         return name;
     });

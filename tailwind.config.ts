@@ -14,7 +14,7 @@ const theme = {
                 900: "#1e3a8a",
             },
             secondary: {
-                50: "#f8fafc",
+                50: "#fafafa",
                 100: "#f1f5f9",
                 200: "#e2e8f0",
                 300: "#cbd5e1",
@@ -25,6 +25,8 @@ const theme = {
                 800: "#1e293b",
                 900: "#0f172a",
             },
+            "primary-text": "#374151",
+            "secondary-text": "white",
         },
     },
     screens: {

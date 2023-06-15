@@ -25,8 +25,8 @@
 <style lang="scss">
     body,
     html {
-        background-color: var(--secondary-900);
-        color: var(--primary-50);
+        background-color: var(--secondary-50);
+        color: var(--primary-text);
         scroll-behavior: smooth;
         font-family: "Poppins", sans-serif, Helvetica, Arial, system-ui;
         overflow-x: hidden;
