@@ -40,7 +40,14 @@ const cssRootVars = (() => {
     let css = ":root {\n";
     for (const colorKey in theme.extend.colors) {
         const colorValue = theme.extend.colors[colorKey];
-        css += `  --${colorKey}: ${colorValue};\n`;
+        if (typeof colorValue === "object") {
+            for (const shadeKey in colorValue) {
+                const shadeValue = colorValue[shadeKey];
+                css += `  --${colorKey}-${shadeKey}: ${shadeValue};\n`;
+            }
+        } else {
+            css += `  --${colorKey}: ${colorValue};\n`;
+        }
     }
 
     for (const screenKey in theme.screens) {
